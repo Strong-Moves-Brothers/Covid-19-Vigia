@@ -1,0 +1,48 @@
+body{
+    background-color: #24313E;
+}
+div.body-Div{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+div.left-Block{
+    background-color: #5B6869;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    width: 200px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+
+
+}
+div.bottom-Div{
+    background-color: #5B6869;
+    position: fixed;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    height: 56%;
+    top: 5px;
+    right: 5px;
+    left: 215px;
+    
+}
+div.main-Div{
+    background-color: #5B6869;
+    position: fixed;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    height: 40%;
+    bottom: 5px;
+    right: 5px;
+    left: 215px;
+    
+}
