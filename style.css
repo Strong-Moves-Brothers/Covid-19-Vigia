@@ -1,0 +1,93 @@
+body{
+    background-color: #24313E;
+}
+div.body-Div{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+div.left-Div{
+    background-color: #5B6869;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    width: 200px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+div.main-Div{
+    /* background-color: #5B6869; */
+    background-color:white;
+    position: fixed;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    height: 56%;
+    top: 5px;
+    right: 5px;
+    left: 215px;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll;     */
+}
+div.bottom-Div{
+    /* background-color: #5B6869; */
+    background-color: green;
+    position: fixed;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    height: 40%;
+    bottom: 5px;
+    right: 5px;
+    left: 215px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+div.left-Div, div.main-Div, div.bottom-Div {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+/* put the scrollbar style for the most known browsers */
+div.left-Div::-webkit-scrollbar { width: 0 !important }
+div.left-Div { -ms-overflow-style: none; }
+div.left-Div { overflow: -moz-scrollbars-none; }
+
+div.main-Div::-webkit-scrollbar { width: 0 !important }
+div.main-Div { -ms-overflow-style: none; }
+div.main-Div { overflow: -moz-scrollbars-none; }
+
+div.bottom-Div::-webkit-scrollbar { width: 0 !important }
+div.bottom-Div { -ms-overflow-style: none; }
+div.bottom-Div { overflow: -moz-scrollbars-none; }
+
+div.little-Block{
+    position: relative;
+    background-color: indigo;
+    height: 14%;
+    width: 96%;
+    left: 3px;
+    margin-top: 3px;
+    right: 3px;
+    border-color: #F2F2F4;
+    border-style: inset solid;
+    border-width: 1px;
+    border-radius: 10px;
+}   
+#urgencia-p, #grupoderisco-p, #idade-p{
+    position: relative;
+    top:0px;
+    left: 10px;
+    font-style: normal;
+    color: white;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    margin: 8px 5px 5px 5px;
+}
