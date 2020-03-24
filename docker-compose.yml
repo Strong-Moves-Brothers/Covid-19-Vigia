@@ -1,0 +1,34 @@
+version: '3.3'
+
+networks:
+    vigia-network:
+        driver: bridge
+
+services:
+
+    app:
+        build: 
+            dockerfile: ./vigiaapp.dockerfile
+            context: .
+        image: vigiaappimg
+        container_name: vigiaapp
+        volumes: 
+            - /home/sora/Documents/Covid-19-Vigia:/app
+        command: python3 manage.py runserver 0.0.0.0:8000
+        ports:
+            - 8000:8000
+        networks: 
+            - vigia-network
+        depends_on: 
+            - db
+
+    db:
+        build:
+            dockerfile: ./vigiadb.dockerfile
+            context: .
+        image: vigiadbimg
+        container_name: vigiadb
+        ports: 
+            - 1234:5432
+        networks: 
+            - vigia-network

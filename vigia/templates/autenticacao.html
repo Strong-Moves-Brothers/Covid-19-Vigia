@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Vigia - Autenticação</title>
+</head>
+<body>
+    <main>
+        <form method="POST" name="form" action={% url 'autenticar'%}>{% csrf_token %}
+            <label class="chave">Chave Secreta: <input type="text" name="entry_key" required></label>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
