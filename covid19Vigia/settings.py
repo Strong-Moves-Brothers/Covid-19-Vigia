@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'covid19Vigia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6utuuj9ai41pp',
-        'USER': 'sarsjqdezmejie',
-        'PASSWORD':   'e9678aea2a598ef4554ccd6deb7a2962b110393b529f257694ab2726842401ac',
-        'HOST': 'ec2-52-86-33-50.compute-1.amazonaws.com'
+        'NAME': 'vigia',
+        'USER': 'postgres',
+        'PASSWORD':   'postgrespasswd',
+        'HOST': 'vigiadb'
     }
 }
 
