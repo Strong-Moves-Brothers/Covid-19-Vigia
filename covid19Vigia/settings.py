@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'covid19Vigia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vigia',
-        'USER': 'postgres',
-        'PASSWORD': 'postgrespasswd',
-        'HOST': 'vigiadb'
+        'NAME': 'd6utuuj9ai41pp',
+        'USER': 'sarsjqdezmejie',
+        'PASSWORD':   'e9678aea2a598ef4554ccd6deb7a2962b110393b529f257694ab2726842401ac',
+        'HOST': 'ec2-52-86-33-50.compute-1.amazonaws.com'
     }
 }
 
@@ -124,3 +124,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, '/static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'covid19Vigia/static')]
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
