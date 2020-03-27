@@ -1,15 +1,24 @@
 body{
     background-color: #24313E;
 }
-div.body-Div{
-    /* background-color: blue; */
+p{
+    color: black;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    line-height: 11px;
+}
+#firstSect{
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
 }
-div.left-Div{
+.left-Div{
     background-color: #5B6869;
     border-color: black;
     border-style: solid;
@@ -17,14 +26,14 @@ div.left-Div{
     width: 200px;
     position: fixed;
     top: 5px;
-    left: 5px;
     bottom: 5px;
     overflow-x: hidden;
     overflow-y: scroll;
+    text-align: center;
+
 }
-div.main-Div{
-    /* background-color: #5B6869; */
-    background-color:white;
+.main-Div{
+    background-color: #5B6869;
     position: fixed;
     border-color: black;
     border-style: solid;
@@ -33,12 +42,12 @@ div.main-Div{
     top: 5px;
     right: 5px;
     left: 215px;
+    text-align: center;
     /* overflow-x: hidden; */
     /* overflow-y: scroll;     */
 }
-div.bottom-Div{
-    /* background-color: #5B6869; */
-    background-color: green;
+.bottom-Div{
+    background-color: #5B6869;
     position: fixed;
     border-color: black;
     border-style: solid;
@@ -47,47 +56,37 @@ div.bottom-Div{
     bottom: 5px;
     right: 5px;
     left: 215px;
+    text-align: center;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-div.left-Div, div.main-Div, div.bottom-Div {
+.left-Div, .main-Div, .bottom-Div {
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
 }
 /* put the scrollbar style for the most known browsers */
-div.left-Div::-webkit-scrollbar { width: 0 !important }
-div.left-Div { -ms-overflow-style: none; }
-div.left-Div { overflow: -moz-scrollbars-none; }
+.left-Div::-webkit-scrollbar { width: 0 !important }
+.left-Div { -ms-overflow-style: none; }
+.left-Div { overflow: -moz-scrollbars-none; }
 
-div.main-Div::-webkit-scrollbar { width: 0 !important }
-div.main-Div { -ms-overflow-style: none; }
-div.main-Div { overflow: -moz-scrollbars-none; }
+.main-Div::-webkit-scrollbar { width: 0 !important }
+.main-Div { -ms-overflow-style: none; }
+.main-Div { overflow: -moz-scrollbars-none; }
 
-div.bottom-Div::-webkit-scrollbar { width: 0 !important }
-div.bottom-Div { -ms-overflow-style: none; }
-div.bottom-Div { overflow: -moz-scrollbars-none; }
+.bottom-Div::-webkit-scrollbar { width: 0 !important }
+.bottom-Div { -ms-overflow-style: none; }
+.bottom-Div { overflow: -moz-scrollbars-none; }
 
-div.little-Block{
+.little-Block{
     position: relative;
-    background-color: indigo;
-    height: 14%;
-    width: 96%;
-    left: 3px;
-    margin-top: 3px;
-    right: 3px;
-    border-color: #F2F2F4;
-    border-style: inset solid;
+    background-color: #F2F2F4;
     border-width: 1px;
-    border-radius: 10px;
-}   
-#urgencia-p, #grupoderisco-p, #idade-p{
-    position: relative;
-    top:0px;
-    left: 10px;
-    font-style: normal;
-    color: white;
-    font-weight: normal;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 13px;
-    margin: 8px 5px 5px 5px;
+    overflow: hidden;
+    max-height: 80px;
+    text-align: left;
+    /* border-style: solid; */
+    /* border-radius: 10px; */
+}
+.little-Block p{
+    margin-left: 10px;
 }
